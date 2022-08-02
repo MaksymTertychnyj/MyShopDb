@@ -4,7 +4,7 @@ CREATE TABLE [dbo].[Products]
 [ProductName] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 [SupplierId] [int] NOT NULL,
 [CategoryId] [int] NOT NULL,
-[Price] [float] NOT NULL
+[Price] [money] NULL
 ) ON [PRIMARY]
 GO
 ALTER TABLE [dbo].[Products] ADD CONSTRAINT [PK_Products] PRIMARY KEY CLUSTERED ([ProductId]) ON [PRIMARY]
