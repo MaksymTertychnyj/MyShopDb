@@ -1,0 +1,7 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE VIEW [dbo].[ProductsStartWith_C] AS
+SELECT ProductName FROM Products WHERE ProductName LIKE 'C%'
+GO
